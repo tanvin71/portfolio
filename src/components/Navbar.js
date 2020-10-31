@@ -58,10 +58,10 @@ const Navbar = () => {
                     <div className="navbar-item" onClick={() => setActive('Projects')}>Projects</div>
                 </Link>
                  }
-                 {active !== 'Contact' ?
+                 {active !== 'Contact' &&
                 <Link to="/contact">
-                    <div className="navbar-item" onClick={() => setActive('Contact')}>Projects</div>
-                </Link>: null
+                    <div className="navbar-item" onClick={() => setActive('Contact')}>Contact</div>
+                </Link>
                  }
                  <button onClick={handleBlog} className="btn btn-primary">My blogs</button>
                 
